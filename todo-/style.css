@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  padding-top: 2rem;
+  background: #00587a;
+}
+
+header {
+  font-size: 1.5rem;
+  flex-direction: column;
+}
+
+header,
+form {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form input,
+form button {
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  border: none;
+  background: white;
+}
+
+form button {
+  background: white;
+  color: #051937;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  cursor: pointer;
+  background: #051937;
+  color: white;
+}
+
+.todo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.todo-list {
+  min-width: 35%;
+  list-style: none;
+}
+
+.todo {
+  margin: 1rem;
+  background: white;
+  color: black;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.5s ease;
+}
+
+.todo li {
+  flex: 1;
+  padding-left: 0.8rem;
+  font-size: 1rem;
+}
+
+.complete-btn,
+.remove-btn {
+  background: #00375a;
+  color: white;
+  border: none;
+  padding: 1rem;
+  transition: all 0.3s ease;
+}
+
+.complete-btn:hover {
+  background: white;
+  color: #00375a;
+  cursor: pointer;
+}
+
+.remove-btn {
+  background: #b3831d;
+  color: white;
+}
+
+.remove-btn:hover {
+  cursor: pointer;
+  background: white;
+  color: #b3831d;
+}
+
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
